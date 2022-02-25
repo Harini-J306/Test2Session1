@@ -1,1 +1,5 @@
-
+gcc -g p3original.c
+ ./a.out
+Enter the number:
+7
+7 is a prime number
