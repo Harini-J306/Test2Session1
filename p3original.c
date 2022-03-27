@@ -8,7 +8,7 @@ int input_number()
   return num;
 }
 
-int is_composite(int n)
+int is_prime(int n)
 {
   for (int i = 2; i <= n/2; i++)
   {
@@ -18,9 +18,9 @@ int is_composite(int n)
   return 0;
 }
 
-void output(int n, int isComposite)
+void output(int n, int is_prime)
 {
-  if (isComposite)
+  if (is_prime)
     printf("%d is not a prime number\n", n);
   else 
     printf("%d is a prime number\n", n);
@@ -29,7 +29,7 @@ void output(int n, int isComposite)
 int main()
 {
   int num = input_number();
-  int res = is_composite(num);
+  int res = is_prime(num);
   output(num, res);
   return 0;
 }
